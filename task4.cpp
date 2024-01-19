@@ -2,6 +2,7 @@
 #include<vector>
 #include<cstdlib>
 
+
 using namespace std;
 
 // Constants for the game board used 
@@ -28,6 +29,7 @@ void gameBoard(const vector<vector<char>>& board)
     cout << "-----------------------------\n";
     cout << "| 1 | 2 | 3 | 4 | 5 | 6 | 7 |\n";
     cout << "-----------------------------\n";
+    
 }
 
 // Function to check if a column is valid for a move
@@ -63,164 +65,73 @@ bool isBoardFull(const vector<vector<char>>& board)
     return true;
 }
 
-// void checkWinner(const vector<vector<char>>& board)
-// {
-//     for (int i = 0; i < ROWS; i++)
-//     {
-//         for (int j = 0; j < COLS; j++)
-//         {
-//             if(board[i][j] == 'X' &&
-//                board[i][j + 1] == 'X' &&
-//                board[i][j + 2] == 'X' &&
-//                board[i][j + 3] == 'X')
-//             {
-//                 cout<< "Player X WINS!!" << endl;
-//                 // return true;
-//             }
-//             else if(board[i][j] == 'O' &&
-//                board[i][j + 1] == 'O' &&
-//                board[i][j + 2] == 'O' &&
-//                board[i][j + 3] == 'O' )
-//             {
-//                 cout<< "Player O WINS!!" << endl;
-//                 // return true;
-//             }
+int CheckFour (const vector<vector<char>>& board, char activePlayer)
+{
+	char XO;
+	int win;
+	XO = activePlayer;
+	win = 0;
+	for(int i = ROWS - 1; i >= 0; i--)
+    {		
+			for(int ix = COLS - 1; ix >= 0; ix--)
+            {
+            if( board[i][ix] == XO     &&
+				board[i-1][ix-1] == XO &&
+				board[i-2][ix-2] == XO &&
+				board[i-3][ix-3] == XO )
+			{
+				win = 1;
+			}
+			
 
-//             if(board[i][j] == 'X' &&
-//                board[i][j - 1] == 'X' &&
-//                board[i][j - 2] == 'X' &&
-//                board[i][j - 3] == 'X')
-//             {
-//                 cout<< "Player X WINS!!" << endl;
-//                 // return true;
-//             }
-//             else if(board[i][j] == 'O' &&
-//                board[i][j - 1] == 'O' &&
-//                board[i][j - 2] == 'O' &&
-//                board[i][j - 3] == 'O' )
-//             {
-//                 cout<< "Player O WINS!!" << endl;
-//                 // return true;
-//             }
+			if( board[i][ix] == XO   &&
+				board[i][ix-1] == XO &&
+				board[i][ix-2] == XO &&
+				board[i][ix-3] == XO )
+			{
+				win = 1;
+			}
+					
+			if( board[i][ix] == XO   &&
+				board[i-1][ix] == XO &&
+				board[i-2][ix] == XO &&
+				board[i-3][ix] == XO )
+			{	
+				win = 1;
+			}
+					
+			if( board[i][ix] == XO     &&
+				board[i-1][ix+1] == XO &&
+				board[i-2][ix+2] == XO &&
+				board[i-3][ix+3] == XO )
+			{
+				win = 1;
+			}
+						
+			if ( board[i][ix] == XO   &&
+				 board[i][ix+1] == XO &&
+				 board[i][ix+2] == XO &&
+				 board[i][ix+3] == XO )
+			{
+				win = 1;
+			}
+            }
+    }
+    return win;
+}
 
-//             if(board[i][j] == 'X' &&
-//                board[i + 1][j] == 'X' &&
-//                board[i + 2][j] == 'X' &&
-//                board[i + 3][j] == 'X' )
-//             {
-//                 cout<< "Player X WINS!!" << endl;
-//                 // return true;
-//             }
-//             else if(board[i][j] == 'O' &&
-//                board[i + 1][j] == 'O' &&
-//                board[i + 2][j] == 'O' &&
-//                board[i + 3][j] == 'O' )
-//             {
-//                 cout<< "Player O WINS!!" << endl;
-//                 // return true;
-//             }
-
-//             if(board[i][j] == 'X' &&
-//                board[i - 1][j] == 'X' &&
-//                board[i - 2][j] == 'X' &&
-//                board[i - 3][j] == 'X' )
-//             {
-//                 cout<< "Player X WINS!!" << endl;
-//                 // return true;
-//             }
-//             else if(board[i][j] == 'O' &&
-//                board[i - 1][j] == 'O' &&
-//                board[i - 2][j] == 'O' &&
-//                board[i - 3][j] == 'O' )
-//             {
-//                 cout<< "Player O WINS!!" << endl;
-//                 // return true;
-//             }
-            
-//             if (board[i][j] == 'X' &&
-//                 board[i + 1][j + 1] == 'X' &&
-//                 board[i + 2][j + 2] == 'X' &&
-//                 board[i + 3][j + 3] == 'X')
-//             {
-//                 cout << "Player X WINS" << endl;
-//                 // return true;
-//             }
-//             else if (board[i][j] == 'O' &&
-//                 board[i + 1][j + 1] == 'O' &&
-//                 board[i + 2][j + 2] == 'O' &&
-//                 board[i + 3][j + 3] == 'O')
-//             {
-//                 cout << "Player O WINS" << endl;
-//                 // return true;
-//             }
-
-//             else if (board[i][i] == 'X' &&
-//                 board[i - 1][j - 1] == 'X' &&
-//                 board[i - 2][j - 2] == 'X' &&
-//                 board[i - 3][j - 3] == 'X')
-//             {
-//                 cout << "Player X WINS!!" << endl;
-//                 // return true;
-//             }
-//             else if (board[i][i] == 'O' &&
-//                 board[i - 1][j - 1] == 'O' &&
-//                 board[i - 2][j - 2] == 'O' &&
-//                 board[i - 3][j - 3] == 'O')
-//             {
-//                 cout << "Player O WINS!!" << endl;
-//                 // return true;
-//             }
-
-//             else if (board[i][i] == 'X' &&
-//                 board[i + 1][j - 1] == 'X' &&
-//                 board[i + 2][j - 2] == 'X' &&
-//                 board[i + 3][j - 3] == 'X')
-//             {
-//                 cout << "Player X WINS!!" << endl;
-//                 // return true;
-//             }
-//             else if (board[i][i] == 'O' &&
-//                 board[i + 1][j - 1] == 'O' &&
-//                 board[i + 2][j - 2] == 'O' &&
-//                 board[i + 3][j - 3] == 'O')
-//             {
-//                 cout << "Player O WINS!!" << endl;
-//                 // return true;
-//             }
-            
-//             else if (board[i][i] == 'X' &&
-//                 board[i - 1][j + 1] == 'X' &&
-//                 board[i - 2][j + 2] == 'X' &&
-//                 board[i - 3][j + 3] == 'X')
-//             {
-//                 cout << "Player X WINS!!" << endl;
-//                 // return true;
-//             }
-//             else if (board[i][i] == 'O' &&
-//                 board[i - 1][j + 1] == 'O' &&
-//                 board[i - 2][j + 2] == 'O' &&
-//                 board[i - 3][j + 3] == 'O')
-//             {
-//                 cout << "Player O WINS!!" << endl;
-//                 // return true;
-//             }
-//         }   
-//     }
-//     // return false;
-    
-// }
 
 int main()
 {
     vector<vector<char>> board(ROWS, vector<char> (COLS, EMPTY));
     bool player1turn = true;
 
-
+    
     while(true)
     {
+        
         gameBoard(board);
 
-        // checkWinner(board);
         char currentPlayer = (player1turn) ? PLAYER1 : PLAYER2;
         cout << "Player " << currentPlayer << ", Enter your move (1 - 7): ";
         int col;
@@ -230,18 +141,29 @@ int main()
         if (isValidMove(board, col))
         {
             makeMove(board, col, currentPlayer);
+               
+                
             if (isBoardFull(board))
             {
                 gameBoard(board);
                 cout<< "It is a TIE!!";
                 break;
             }
+            
             player1turn = !player1turn;
         }
         else
         {
             cout << "Invalid move!! Try Again!!";
         }
+        int w = CheckFour(board, currentPlayer);
+            if(w == 1)
+            {
+                gameBoard(board);
+                cout<<"Player "<< currentPlayer << " WINS!"<<endl;
+                system("pause");
+                break;
+            }
     }
     return 0;
 }
