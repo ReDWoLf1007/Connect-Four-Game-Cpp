@@ -3,5 +3,21 @@ Connect four is a unique structured game that works almost like a Tic Tac Toe ga
 Player have to connect FOUR consecutive Dots to win.
 If all the dots are filled it is a draw.
 It is a little complex game than TIC TAC TOE in terms of codding as it requires more definitions and conditions to win.
-I'm still working on it so I have not updated the code as of yet.
-The Code will be provided soon.
+It requires to check for the win condition with each move and with each moved position on the board.
+# Functions Involved:
+## gameBoard()
+This function was designed to create the game board where the players would play the game.
+Each iteration will call the **gameboard()** function and it will present throughout.
+The game board looks like this:
+  |  |  |  |  |  |  |
+  |  |  |  |  |  |  |
+  |  |  |  |  |  |  |
+  |  |  |  |  |  |  |
+  |__|__|__|__|__|__|
+  |1 |2 |3 |4 |5 |6 |
+
+The board will look something like this.
+## isValidMove()
+This function will check if the box where player wants to move is empty or is already occupied.
+It will send a signal if it is valid to move there.
+  
