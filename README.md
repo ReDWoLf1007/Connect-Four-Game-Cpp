@@ -11,11 +11,17 @@ Each iteration will call the **gameboard()** function and it will present throug
 The game board looks like this:
 
 **|  |  |  |  |  |  |**
+
 **|  |  |  |  |  |  |**
+
 **|  |  |  |  |  |  |**
+
 **|  |  |  |  |  |  |**
+
 **|--|--|--|--|--|--|**
+
 **|1 |2 |3 |4 |5 |6 |**
+
 **|--|--|--|--|--|--|**
 
 The board will look something like this.
