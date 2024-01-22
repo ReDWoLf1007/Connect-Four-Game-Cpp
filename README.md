@@ -11,7 +11,7 @@ Each iteration will call the **gameboard()** function and it will present throug
 The game board looks like this:
 
 ##### Game Board
-![alt Text] (https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/Images/board.png, right = true)
+![alt Text] (https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/Images/board.png,raw=true)
 
 
 The board will look something like this.
