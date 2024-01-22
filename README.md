@@ -10,7 +10,7 @@ This function was designed to create the game board where the players would play
 Each iteration will call the **gameboard()** function and it will present throughout.
 The game board looks like this:
 
-![image] C:\Users\sagar\OneDrive\Documents\InternPe\Task 4
+![image] [C:\Users\sagar\OneDrive\Documents\InternPe\Task 4](https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/board.png)
 
 The board will look something like this.
 ## isValidMove()
