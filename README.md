@@ -9,7 +9,7 @@ It requires to check for the win condition with each move and with each moved po
 This function was designed to create the game board where the players would play the game.
 Each iteration will call the **gameboard()** function and it will present throughout.
 The game board looks like this:
-<span>**|  |  |  |  |  |  |**<\span>
+"<span>**|  |  |  |  |  |  |**<\span>"
 **|  |  |  |  |  |  |**
 **|  |  |  |  |  |  |**
 **|  |  |  |  |  |  |**
