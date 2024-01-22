@@ -10,13 +10,13 @@ This function was designed to create the game board where the players would play
 Each iteration will call the **gameboard()** function and it will present throughout.
 The game board looks like this:
 
-**|  |  |  |  |  |  |**
+**|--|--|--|--|--|--|**
 
-**|  |  |  |  |  |  |**
+**|--|--|--|--|--|--|**
 
-**|  |  |  |  |  |  |**
+**|--|--|--|--|--|--|**
 
-**|  |  |  |  |  |  |**
+**|--|--|--|--|--|--|**
 
 **|--|--|--|--|--|--|**
 
