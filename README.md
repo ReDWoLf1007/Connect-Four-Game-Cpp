@@ -10,19 +10,7 @@ This function was designed to create the game board where the players would play
 Each iteration will call the **gameboard()** function and it will present throughout.
 The game board looks like this:
 
-**|--|--|--|--|--|--|**
-
-**|--|--|--|--|--|--|**
-
-**|--|--|--|--|--|--|**
-
-**|--|--|--|--|--|--|**
-
-**|--|--|--|--|--|--|**
-
-**|1 |2 |3 |4 |5 |6 |**
-
-**|--|--|--|--|--|--|**
+![image] C:\Users\sagar\OneDrive\Documents\InternPe\Task 4
 
 The board will look something like this.
 ## isValidMove()
