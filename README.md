@@ -9,13 +9,13 @@ It requires to check for the win condition with each move and with each moved po
 This function was designed to create the game board where the players would play the game.
 Each iteration will call the **gameboard()** function and it will present throughout.
 The game board looks like this:
-**|  |  |  |  |  |  |**\n
-**|  |  |  |  |  |  |**\n
-**|  |  |  |  |  |  |**\n
-**|  |  |  |  |  |  |**\n
-**|--|--|--|--|--|--|**\n
-**|1 |2 |3 |4 |5 |6 |**\n
-**|--|--|--|--|--|--|**\n
+**|  |  |  |  |  |  |**        Row 1
+**|  |  |  |  |  |  |**        Row 2
+**|  |  |  |  |  |  |**        Row 3
+**|  |  |  |  |  |  |**        Row 4
+**|--|--|--|--|--|--|**
+**|1 |2 |3 |4 |5 |6 |**
+**|--|--|--|--|--|--|**
 
 The board will look something like this.
 ## isValidMove()
