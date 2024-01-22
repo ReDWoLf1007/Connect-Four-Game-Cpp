@@ -12,6 +12,7 @@ The game board looks like this:
 
 ##### Game Board
 ![Game Board](https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/Images/board.png?raw=true)
+
 The board will look something like this.
 ## isValidMove()
 This function will check if the box where player wants to move is empty or is already occupied.
