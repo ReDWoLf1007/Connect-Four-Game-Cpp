@@ -9,6 +9,7 @@ It requires to check for the win condition with each move and with each moved po
 This function was designed to create the game board where the players would play the game.
 Each iteration will call the **gameboard()** function and it will present throughout.
 The game board looks like this:
+
 **|  |  |  |  |  |  |**
 **|  |  |  |  |  |  |**
 **|  |  |  |  |  |  |**
@@ -21,56 +22,5 @@ The board will look something like this.
 ## isValidMove()
 This function will check if the box where player wants to move is empty or is already occupied.
 It will send a signal if it is valid to move there.
-```json
-{
-     "step1":{
-             "fields":[
-                 {
-                     "key":"name",
-                     "type":"edit_text",
-                     "hint":"Enter Your Name"
-                 },
-                 {
-                     "key":"email",
-                     "type":"edit_text",
-                     "hint":"Enter email address"
-                 },
-                 {
-                     "key":"labelBackgroundImage",
-                     "type":"label",
-                     "text":"Choose Background Image"
-                 },
-                 {
-                     "key":"chooseImage",
-                     "type":"choose_image",
-                     "uploadButtonText":"Choose"
-                 },
-                 {
-                     "key":"getAddressFromLatlng",
-                     "type":"gps",
-                     "options":[
-                        {
-                          "val":"2.334,3.444"
-                        }
-                     ]
-                 },
-                 {
-                     "key":"showDropDown",
-                     "type":"spinner",
-                     "options":[
-                        {
-                         "default":true,
-                         "displayText":"Delhi"
-                        },
-                         {
-                         "default":false,
-                         "displayText":"Mumbai"
-                        }
-                     ]
-                 }
-             ],
-             "title":"Step 1",
-             "next":"step2"
-         }
-    }
-  ```
+
+
