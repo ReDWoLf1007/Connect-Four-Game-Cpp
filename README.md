@@ -21,11 +21,14 @@ It will send a signal if it is valid to move there.
 This function will move the current player's sign(X, O) in one of the columns given by the Player.
 First turn is X's turn by default, it would look something like this-
 
-![X's turn](https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/Images/X's%20Turn.png)
+##### X's Turn
+![X's turn] (https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/Images/X's%20Turn.png)
 
-![O's Turn](https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/Images/O's%20Turn.png)
+##### O's Turn
+![O's Turn] (https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/Images/O's%20Turn.png)
 
 After implying few MOVES the Board will look something like this-
 
+##### After some Moves
 ![After some Moves](
 
