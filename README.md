@@ -32,4 +32,30 @@ After implying few MOVES the Board will look something like this-
 ##### After some Moves
 ![After some Moves](https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/Images/After%20some%20moves.png)
 
+## isBoardFull()
+This Function will check of the board is full or not. If the board is full, the game will result in Draw otherwise next move is played.
 
+##### Full Board/Tie
+![Full Board](https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/Images/Tie.png)
+
+## checkFour()
+This function will check the condition for four consecutive same signs(X, O).
+If X are present in consecutive order in four of the below ways-
+1. Linear / Horizontal
+2. Vertical
+3. Left Diagnal
+4. Right Diagnal
+Then X Wins.
+
+##### X WINS
+##### Linear / Horizontal WIN
+![Linear](https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/Images/Linear%20Win.png)
+
+##### Vertical WIN
+![Vertical](https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/Images/Vertical%20Win.png)
+
+##### Left Diagnal
+![Diagnal Left](https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/Images/Diagnal%20Left.png)
+
+##### Right Diagnal
+![Diagnal Right](https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/Images/Diagnal%20Right.png)
