@@ -18,5 +18,7 @@ The board will look something like this.
 This function will check if the box where player wants to move is empty or is already occupied.
 It will send a signal if it is valid to move there.
 ## makeMove()
-/* Continue LAter....*/
+This function will move the current player's sign(X, O) in one of the columns given by the Player.
+First turn is X's turn by default, it would look something like this-
+![X's turn]
 
