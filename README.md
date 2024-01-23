@@ -59,3 +59,5 @@ Then X Wins.
 
 ##### Right Diagnal
 ![Diagnal Right](https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/Images/Diagnal%20Right.png)
+
+Similarly Player O can win.
