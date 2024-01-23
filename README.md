@@ -30,5 +30,6 @@ First turn is X's turn by default, it would look something like this-
 After implying few MOVES the Board will look something like this-
 
 ##### After some Moves
-![After some Moves](
+![After some Moves](https://github.com/ReDWoLf1007/Connect-Four-Game-Cpp/blob/main/Images/After%20some%20moves.png)
+
 
